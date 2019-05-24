@@ -21,7 +21,7 @@ import java.util.function.BiFunction;
 public final class DeliveryOrder implements Aggregate {
 
 	@Builder
-	private DeliveryOrder(@NonNull DeliveryOrderRef ref,
+	private  DeliveryOrder(@NonNull DeliveryOrderRef ref,
 						  @NonNull KitchenOrderRef kitchenOrderRef,
 						  @NonNull OnlineOrderRef onlineOrderRef,
 						  @Singular List<Pizza> pizzas,
@@ -33,7 +33,7 @@ public final class DeliveryOrder implements Aggregate {
 	 * Private no-args ctor to support reflection ONLY.
 	 */
 	@SuppressWarnings("unused")
-	private DeliveryOrder() {
+	private  DeliveryOrder() {
 	}
 
 	@Override
